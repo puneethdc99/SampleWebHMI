@@ -74,3 +74,20 @@ body {
   color: #717171;
   line-height: 25px;
 }
+
+
+.button {
+  display: block;
+  width: 115px;
+  height: 25px;
+  background: gray;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+.button:hover {
+  background-color: darkgrey;
+}
+
