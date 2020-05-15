@@ -40,20 +40,6 @@
         <div class="header"><h1>Sample WEB HMI Display</h1></div>
         <div class="info">
           <div class="example">
-            <script>
-              var bloomingMenu = new BloomingMenu({
-                startAngle: 0,
-                endAngle: 315,
-                radius: 100,
-                itemsNum: 8,
-              });
-              bloomingMenu.render();
-              // Prevents "elastic scrolling" on Safari
-              document.addEventListener("touchmove", function (event) {
-                "use strict";
-                event.preventDefault();
-              });
-            </script>
             <a
               href="#"
               class="button"
@@ -62,11 +48,13 @@
               download
               >Print</a
             >
-            <img
-              src="./images/from_print.png"
-              id="fullImage"
-              style="border: none; width: 100%;"
-            />
+            <div class="imageonly">
+              <img
+                src="./images/from_print.png"
+                id="fullImage"
+                style="border: none; width: 100%;"
+              />
+            </div>
           </div>
         </div>
       </div>
