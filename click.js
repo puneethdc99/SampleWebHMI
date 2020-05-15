@@ -1,15 +1,15 @@
 function LoadSecondImage() {
-  document.getElementById("fullImage").src = "./images/Mining2.png";
+  document.getElementById("fullImage").src = "./images/Display2.png";
   bloomingMenu.remove();
 }
 
 function LoadFirstImage() {
-  document.getElementById("fullImage").src = "./images/from_print.png";
+  document.getElementById("fullImage").src = "./images/Display1.png";
   bloomingMenu.render();
 }
 
 function LoadThirdImage() {
-  document.getElementById("fullImage").src = "./images/Mining3.png";
+  document.getElementById("fullImage").src = "./images/Display3.png";
   bloomingMenu.remove();
 }
 
@@ -23,7 +23,7 @@ function saveImage() {
   if (imagedata.includes("shapes.svg")) {
     document
       .getElementById("printbtn")
-      .setAttribute("href", "./images/Shapes.png");
+      .setAttribute("href", "./images/Display4.png");
   } else {
     document.getElementById("printbtn").setAttribute("href", imagedata);
   }
