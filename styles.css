@@ -90,36 +90,32 @@ body {
   background-color: darkgrey;
 }
 
-.vmenu {
-  border: 1px solid #aaa;
-  position: absolute;
-  background: #fff;
-  display: none;
-  font-size: 0.75em;
+#context-menu {
+  position: fixed;
+  z-index: 10000;
+  width: 150px;
+  background: gray;
+  border-radius: 5px;
+  transform: scale(0);
+  transform-origin: top left;
 }
-.vmenu .first_li span {
-  width: 100px;
-  display: block;
-  padding: 5px 10px;
-  cursor: pointer;
+#context-menu.active {
+  transform: scale(1);
+  transition: transform 300ms ease-in-out;
 }
-.vmenu .inner_li {
-  display: none;
-  margin-left: 120px;
-  position: absolute;
-  border: 1px solid #aaa;
-  border-left: 1px solid #ccc;
-  margin-top: -28px;
-  background: #fff;
+#context-menu .item {
+  padding: 8px 10px;
+  font-size: 15px;
+  color: #eee;
 }
-.vmenu .sep_li {
-  border-top: 1px ridge #aaa;
-  margin: 5px 0;
+#context-menu .item:hover {
+  background: #555;
 }
-.vmenu .fill_title {
-  font-size: 11px;
-  font-weight: bold;
-  height: 15px;
-  overflow: hidden;
-  word-wrap: break-word;
+#context-menu .item i {
+  display: inline-block;
+  margin-right: 5px;
+}
+#context-menu hr {
+  margin: 2px 0px;
+  border-color: #555;
 }

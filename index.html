@@ -4,10 +4,6 @@
     <meta charset="UTF-8" />
     <title>Sample WEB HTML Display</title>
     <link rel="stylesheet" href="styles.css" />
-    <script
-      type="text/javascript"
-      src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"
-    ></script>
     <script type="text/javascript" src="./RightClick.js"></script>
     <script src="./click.js"></script>
     <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
@@ -40,7 +36,16 @@
         </ul>
       </div>
       <div class="main_content">
-        <div class="header"><h1 id="titl">Sample WEB HTML Display</h1></div>
+        <div class="header"><h1>Sample WEB HTML Display</h1></div>
+        <div id="context-menu">
+          <div class="item"><i class="fa fa-cut"></i> Cut</div>
+          <div class="item"><i class="fa fa-clone"></i> Copy</div>
+          <div class="item"><i class="fa fa-paste"></i> Paste</div>
+          <div class="item"><i class="fa fa-trash-o"></i> Delete</div>
+          <hr />
+          <div class="item"><i class="fa fa-refresh"></i> Reload</div>
+          <div class="item"><i class="fa fa-times"></i> Exit</div>
+        </div>
         <div class="info">
           <div class="example">
             <a
@@ -57,69 +62,6 @@
                 id="fullImage"
                 style="border: none; width: 100%;"
               />
-            </div>
-            <div class="vmenu">
-              <div class="first_li"><span>Open</span></div>
-              <div class="first_li"><span>Open in new tab</span></div>
-              <div class="sep_li"></div>
-
-              <div class="first_li">
-                <span>Quick Preview</span>
-                <div class="inner_li">
-                  <span>Dossier</span>
-                  <span>Channel 1</span>
-                  <span>Channel 2</span>
-                </div>
-              </div>
-
-              <div class="first_li">
-                <span>Preview</span>
-                <div class="inner_li">
-                  <a href="#"><span>Channel 1</span></a>
-                  <span>Channel 2 </span>
-                </div>
-              </div>
-
-              <div class="first_li"><span>Edit</span></div>
-              <div class="first_li"><span>Event Log</span></div>
-              <div class="sep_li"></div>
-              <div class="first_li"><span>New</span></div>
-              <div class="first_li">
-                <span>Assignments</span>
-                <div class="inner_li">
-                  <span>Assignement 1</span>
-                  <span>Assignement 2</span>
-                </div>
-              </div>
-
-              <div class="first_li">
-                <span>Assets</span>
-                <div class="inner_li">
-                  <span>Asset 1</span>
-                  <span>Asset 2</span>
-                  <span>All Assets</span>
-                </div>
-              </div>
-              <div class="first_li"><span>Preview</span></div>
-              <div class="sep_li"></div>
-              <div class="first_li">
-                <span>Move to</span>
-                <div class="inner_li">
-                  <span>Folder name</span>
-                </div>
-              </div>
-
-              <div class="first_li">
-                <span>Others</span>
-                <div class="inner_li">
-                  <span>Mark as Read</span>
-                  <span>Mark as Unread</span>
-                  <span>Trash</span>
-                  <span>Archieve</span>
-                  <span>Commite</span>
-                  <span>Release</span>
-                </div>
-              </div>
             </div>
           </div>
         </div>
