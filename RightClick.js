@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $("#fullImage").bind("contextmenu", function (e) {
+  $("#titl").bind("contextmenu", function (e) {
     var $cmenu = $(this).next();
     $('<div class="overlay"></div>')
       .css({
