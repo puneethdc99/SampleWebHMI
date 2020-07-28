@@ -1,8 +1,8 @@
 window.addEventListener("contextmenu", function (event) {
   event.preventDefault();
   var contextElement = document.getElementById("context-menu");
-  contextElement.style.top = event.offsetY + "px";
-  contextElement.style.left = event.offsetX + "px";
+  contextElement.style.top = event.offsetY + 120 + "px";
+  contextElement.style.left = event.offsetX + 220 + "px";
   contextElement.classList.add("active");
 });
 window.addEventListener("click", function () {
